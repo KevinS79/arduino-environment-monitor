@@ -53,7 +53,7 @@ void loop() {
       Serial.println("connected...");
       Serial.println("ARDUINO: forming HTTP request message");
 
-      client.print("GET /temperature/arduino_process.php?temp=");
+      client.print("GET /room-environment/arduino_process.php?temp=");
       client.print(tF);
       client.print("&humidity=");
       client.print(h);
